@@ -1,0 +1,62 @@
+setxkbmap -option caps:escape
+setxkbmap se
+
+sudo pacman -S gnome-tweaks # Not sure if this is necessary
+sudo pacman -S gtk4 gtk3 gtk2
+sudo pacman -S arc-gtk-theme
+gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
+lxappearance
+ 
+install yay via: https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/
+
+install polybar
+
+yay -S nerd-fonts-iosevka
+yay -S nerd-fonts-complete
+yay -S ttf-font-awesome
+yay -S otf-feather
+yay -S ttf-material-icons-git
+sudo pacman -S noto-fonts
+yay -S urxvt-resize-font-git
+
+i3 alternating layouts
+
+/usr/share/i3lock-fancy/icons
+vtxt
+
+pip install pynvim
+
+xlsclients for viewing x window names
+
+*Cool dots:
+https://www.reddit.com/r/calvinandhobbes/comments/jzbd3u/thank_you_linux_for_letting_me_have_this_lock/
+https://github.com/lokesh-krishna/dotfiles
+
+* Git:
+git reset <file>
+which will remove it from the current index (the "about to be committed" list) without changing anything else.
+
+You can use git reset
+without any file name to unstage all due changes. This can come in handy when there are too many files to be listed one by one in a reasonable amount of time.
+
+*To remove folder/directory only from git repository and not from the local try 3 simple commands:
+git rm -r --cached FolderName
+git commit -m "Removed folder from repository"
+git push origin master
+
+
+* FIX: 
+upload arch dots to ornfelt1060 with pkg_lists and notes.txt
+VTXT and wiki
+upload wiki syntax to dotfiles also...
+i3 updates and init.vim updates, picom and st
+
+update statusbar (vim) on laptop and comp. Merge vimrc's...
+ranger sticky bookmarks?
+Might need to change picom on laptop...
+
+config token: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 
+
+# Maybe use this for internet connectivity
+nmcli connection show --active
+right and left click scripts for dwm
